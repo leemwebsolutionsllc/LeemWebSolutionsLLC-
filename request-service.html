@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Service - Leem Web Solutions LLC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/1604390dea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Leem Web Solutions LLC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="request-service.html">Request Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="request-header text-center text-white d-flex align-items-center justify-content-center" style="background-image: url('bg.webp'); height: 50vh;">
+        <div class="request-content">
+            <h1>Request a Service</h1>
+            <p>Let's start your project together</p>
+        </div>
+    </header>
+
+    <section class="request-section py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">Request Our Services</h2>
+            <p class="text-center text-muted">Fill out the form below to request our services.</p>
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="form-group mb-3">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="service">Service Requested</label>
+                    <select class="form-control" id="service" name="service" required>
+                        <option value="Web Development - Starter ($299)">Web Development - Starter ($299)</option>
+                        <option value="Web Development - Basic ($499)">Web Development - Basic ($499)</option>
+                        <option value="Web Development - Standard ($699)">Web Development - Standard ($699)</option>
+                        <option value="Web Development - Premium ($999)">Web Development - Premium ($999)</option>
+                        <option value="App Development - Starter ($499)">App Development - Starter ($499)</option>
+                        <option value="App Development - Basic ($799)">App Development - Basic ($799)</option>
+                        <option value="App Development - Standard ($999)">App Development - Standard ($999)</option>
+                        <option value="App Development - Premium ($1299)">App Development - Premium ($1299)</option>
+                        <option value="Digital Marketing - Starter ($199)">Digital Marketing - Starter ($199)</option>
+                        <option value="Digital Marketing - Basic ($399)">Digital Marketing - Basic ($399)</option>
+                        <option value="Digital Marketing - Standard ($599)">Digital Marketing - Standard ($599)</option>
+                        <option value="Digital Marketing - Premium ($799)">Digital Marketing - Premium ($799)</option>
+                        <option value="Custom Plan - Contact Us">Custom Plan - Contact Us</option>
+                    </select>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="details">Additional Details</label>
+                    <textarea class="form-control" id="details" name="details" rows="3" placeholder="Provide any additional information"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Request</button>
+            </form>
+        </div>
+    </section>
+    
+    
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <form name="subscribe" method="POST" data-netlify="true">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+            <p>© 2024 Leem Web Solutions LLC. All Rights Reserved.</p>
+            <p><a href="mailto:admin@leemwebsolutions.com" class="text-white">admin@leemwebsolutions.com</a></p>
+        </div>
+    </footer>
+
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

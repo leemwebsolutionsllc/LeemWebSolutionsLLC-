@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leem Web Solutions LLC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/1604390dea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Leem Web Solutions LLC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="request-service.html">Request Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center text-white d-flex align-items-center justify-content-center" style="background-image: url('header.jpg'); height: 100vh;">
+        <div class="hero-content">
+            <h1 class="display-4">Transform Your Digital Presence</h1>
+            <p class="lead">Web Development, App Development, and SEO Services</p>
+            <a href="pricing.html" class="btn btn-primary btn-lg mt-4">Get Started</a>
+        </div>
+    </header>
+
+    <section class="services py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <img src="web.png" alt="Web Development" class="img-fluid mb-3 rounded">
+                    <h3>Web Development</h3>
+                    <p>Beautiful and responsive websites tailored to your business needs.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="mobile.png" alt="App Development" class="img-fluid mb-3 rounded">
+                    <h3>App Development</h3>
+                    <p>Innovative mobile applications that engage users and grow your brand.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="seo.png" alt="Digital Marketing" class="img-fluid mb-3 rounded">
+                    <h3>Digital Marketing</h3>
+                    <p>Enhance your online visibility with our expert SEO strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Leem Web Solutions transformed our online presence. Our website is now sleek and user-friendly!"</p>
+                        <h5>- Sarah J.</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Their app development team is top-notch! Our app is intuitive and engaging. Highly recommend!"</p>
+                        <h5>- Mike D.</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Thanks to their SEO strategies, our search rankings have soared. We’re attracting more clients than ever."</p>
+                        <h5>- Lisa M.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Work</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="portfolio.png" alt="Portfolio 1" class="img-fluid mb-3">
+                    <h5>Personal Portfolio</h5>
+                    <p>A Software Engineer personal portfolio that assisted the client land a job.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="photography.png" alt="Portfolio 2" class="img-fluid mb-3">
+                    <h5>Photographer Booking</h5>
+                    <p>A proffesional photographer booking website that assisted the client to market themselves for events.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="GranduerHotel.png" alt="Portfolio 3" class="img-fluid mb-3">
+                    <h5>Hotel Franchise</h5>
+                    <p>A hotel room booking service for a small hotel chain. Users can book, reschedule, and cancel reservations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Get in Touch</h2>
+            <p>Ready to start your project? Contact us today to discuss your requirements and get a free quote!</p>
+            <a href="request-service.html" class="btn btn-primary btn-lg mt-4">Contact Us</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <form name="subscribe" method="POST" data-netlify="true">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <p>© 2024 Leem Web Solutions LLC. All Rights Reserved.</p>
+            <p><a href="mailto:admin@leemwebsolutions.com" class="text-white">admin@leemwebsolutions.com</a></p>
+        </div>
+    </footer>
+
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.hero-section, .about-header, .pricing-header, .request-header {
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+.hero-content, .about-content, .pricing-content, .request-content {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.services .col-md-4:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Loading Spinner */
+#loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+#loading .spinner {
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
